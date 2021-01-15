@@ -1,0 +1,31 @@
+{
+    "components": [{
+            "id": "aaa",
+            "class": "x y z",
+            "scope": "singleton",
+            "type": "github.com/abc/def/AAA",
+            "initMethod": "start",
+            "destroyMethod": "stop"
+        },
+        {
+            "id": "bbb",
+            "class": "xb y z",
+            "scope": "singleton",
+            "type": "github.com/abc/def/BBB",
+            "initMethod": "start",
+            "destroyMethod": "stop"
+        },
+        {
+            "id": "ccc",
+            "class": "x y z",
+            "scope": "singleton",
+            "type": "github.com/abc/def/CCC",
+            "inject": {
+                "a": "#aaa",
+                "b": ".xb"
+            },
+            "initMethod": "start",
+            "destroyMethod": "stop"
+        }
+    ]
+}
